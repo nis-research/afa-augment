@@ -15,6 +15,67 @@ For more details see our [CVPR 2024 paper: Fourier-basis Functions to Bridge Aug
 
 ## Contents
 
-This directory includes a reference implementation in PyTorch and Numpy of the augmentation method used in AFA.
+This directory includes a reference implementation in PyTorch of the augmentation method used in AFA.
 
 We also include PyTorch re-implementations of AFA on both CIFAR-10/100 and ImageNet which both support training and evaluation on CIFAR-10/100-C and ImageNet-C.
+
+## Experiment Setups
+
+The following snippets are an example of how to use the ConfigBuilder to create a config object
+
+```python
+
+experiments = [
+    # This creates the experimental setup for training ImageNet using ResNet50-Dubin model
+    # The training is done with the AFA attack and the mean strength is set to 10 and the minimum strength is set to 0
+    # It does not use JSD and so defaults to use of ACE loss as there is an attack specified
+    # It does not use mix like CutMix or MixUp
+    # No other augmentations are used
+    {
+        'ds': 'in', 'm': 'rn50dubin', 'use_jsd': False,
+        'use_prime': False, 'use_augmix': False, 'in_mix': False, 'use_mix': False,
+        'use_fourier': False, 'use_apr': False, 'attack': 'afa', 'min_str': 0., 'mean_str': 10.,
+    },
+
+    # This creates the experimental setup for training ImageNet using CCT model
+    # The training is done with the AFA attack and the mean strength is set to 10 and the minimum strength is set to 0
+    # It does not use JSD and so defaults to use of ACE loss as there is an attack specified
+    # It uses mix like CutMix or MixUp
+    # It uses AugMix besides the AFA augmentation
+    {
+        'ds': 'in', 'm': 'cct_14_7x2_224', 'use_jsd': False,
+        'use_prime': False, 'use_augmix': True, 'in_mix': False, 'use_mix': True,
+        'use_fourier': False, 'use_apr': False, 'attack': 'afa', 'min_str': 0., 'mean_str': 10.,
+    },
+]
+```
+
+The ```experiment``` variable is a list of dictionaries, each dictionary represents an experimental setup.
+Specify the ```experiment``` list in the ```main.py``` file and run the file to start the experiments.
+
+Look at ```config_utils.py``` for more details on the ConfigBuilder class and experimental setups.
+
+
+## Requirements
+- PyTorch
+- Numpy
+- Matplotlib
+- einops, opt_einsum
+- tqdm
+- ml-collections
+- torchvision
+- pytorch_lightning
+- wandb
+- torchmetrics
+- thop
+
+## Pretrained Models
+The process to load pretrained models for ImageNet can be found [here](./pretrained) using the ```load_weights.py``` script.
+
+## Citation
+If you find this repository useful, please consider citing our paper:
+```
+```
+
+## License
+This repository is released under the MIT License. See [LICENSE](./LICENSE) for more details.
