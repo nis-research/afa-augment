@@ -1,4 +1,9 @@
-Download the Pre-Trained weights as follows:
+1. Clone the repository, at least the project.models from the main project.
+2. Download the pre-trained weights from the following links.
+3. Place the weights in the corresponding directories for the models.
+4. Use ```load_weights.py``` to load the weights and use them for inference or fine-tuning.
+
+Note: Place them in the corresponding directories for the models. ResNet 18 and ResNet 50 have DuBIN variants when auxiliary augmentation is used. CCT does not have a separate directory for auxiliary augmentations.
 
 <table>
 <thead>
