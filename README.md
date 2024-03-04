@@ -55,6 +55,20 @@ Specify the ```experiment``` list in the ```main.py``` file and run the file to 
 
 Look at ```config_utils.py``` for more details on the ConfigBuilder class and experimental setups.
 
+## Running the Experiments
+
+First install the requirements using the following command:
+```bash
+pip install -r requirements.txt
+```
+
+Then, construct the config object using the ConfigBuilder class and specify the experiments in the ```main.py``` file.
+This is shown above.
+
+To run the experiments, use the following command:
+```bash
+python main.py
+```
 
 ## Requirements
 - PyTorch
