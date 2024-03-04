@@ -1,0 +1,12 @@
+torch
+numpy
+matplotlib
+einops
+opt_einsum
+tqdm
+ml-collections
+torchvision
+pytorch_lightning
+wandb
+torchmetrics
+thop
