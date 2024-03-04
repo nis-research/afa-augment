@@ -24,10 +24,10 @@ WEIGHTS = {
     ],
     'rn50': [
         'baseline',
-        'augmix_90_epochs',
+        'augmix_jsd_90_epochs',
         'prime_not_fine_tuned',
         'ta',
-        'apr_sp_wo_augmix'
+        'apr-sp'
     ],
     'rn50dubin': [
         'afa_only',
@@ -35,7 +35,7 @@ WEIGHTS = {
         'ta_afa',
         'augmix_afa_jsd',
         'augmix_afa_ace',
-        'main_apr_0_6_aux_afa'
+        'apr-sp_afa'
     ],
     'cct': [
         'baseline',
@@ -46,8 +46,7 @@ WEIGHTS = {
         'prime_afa',
         'ta',
         'ta_afa',
-        # there is no combination of fourier with Augmix since we did not want to use
-        # JSD for cct as the run takes too long
+        # there is no combination of fourier with Augmix since we did not want to use JSD for cct experiments
     ]
 }
 
