@@ -72,6 +72,9 @@ Look at ```config_utils.py``` for more details on the ConfigBuilder class and ex
 ## Pretrained Models
 The process to load pretrained models for ImageNet can be found [here](./pretrained) using the ```load_weights.py``` script.
 
+## Running Benchmarks
+We refer to: [CorruptionBenchCV](https://github.com/nis-research/CorruptionBenchCV) for the program code used to make the benchmark.
+
 ## Citation
 If you find this repository useful, please consider citing our paper:
 ```
