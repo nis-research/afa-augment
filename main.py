@@ -61,7 +61,7 @@ def main(config, weights=None):
     normalise_transform = T.Normalize(mean=dataset_class.mean, std=dataset_class.std)
 
     test_transform, train_transform = get_standard_transforms(config.dataset, img_sz, config.enable_aug.premix)
-    using_wrapper = config.enable_aug.use_augmix or config.enable_aug.use_augmax
+    using_wrapper = config.enable_aug.use_augmix
 
     model_class = get_model(config.dataset, config.model)
     if config.dataset == 'tin':
