@@ -7,7 +7,7 @@ We demonstrate the utility of augmentation via Fourier-basis additive noise in a
 Our results show that AFA benefits the robustness of models against common corruptions, OOD generalization, and consistency of performance of models against increasing perturbations, with negligible deficit to the standard performance of models over various benchmarks and resolutions. 
 It can be seamlessly integrated with other augmentation techniques to further boost performance. 
 
-For more details see our [CVPR 2024 paper: Fourier-basis Functions to Bridge Augmentation Gap: Rethinking Frequency Augmentation in Image Classification]()
+For more details see our [CVPR 2024 paper: Fourier-basis Functions to Bridge Augmentation Gap: Rethinking Frequency Augmentation in Image Classification](https://arxiv.org/abs/2403.01944)
 
 ## Schema
 
