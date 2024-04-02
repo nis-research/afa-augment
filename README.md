@@ -86,8 +86,10 @@ python main.py
 ## Pretrained Models
 The process to load pretrained models for ImageNet can be found [here](./pretrained) using the ```load_weights.py``` script.
 
-## Running Benchmarks
-We refer to: [CorruptionBenchCV](https://github.com/nis-research/CorruptionBenchCV) for the program code used to make the benchmark.
+## Evaluations
+We refer to: [CorruptionBenchCV](https://github.com/nis-research/CorruptionBenchCV) for the corruption benchmark tests on ImageNet-C, ImageNet-\bar{C}, ImageNet-3DCC and ImageNet-P, and the [ImageNet-v2](https://github.com/modestyachts/ImageNetV2) and [ImageNet-R](https://github.com/hendrycks/imagenet-r) for the OOD tests.
+
+The Fourier heatmaps of models are plotted using [this repository](https://github.com/gatheluck/FourierHeatmap).
 
 ## Citation
 If you find this repository useful, please consider citing our paper:
