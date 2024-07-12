@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: If you use this software, please cite both the article from preferred-citation and the software itself.
+authors:
+  - family-names: Vaish
+    given-names: Puru
+  - family-names: Wang
+    given-names: Shunxin
+  - family-names: Strisciuglio
+    given-names: Nicola
+title: 'Fourier-basis functions to bridge augmentation gap: Rethinking frequency augmentation in image classification'
+version: 1.0.0
+date-released: '2024-07-12'
+preferred-citation:
+  authors:
+    - family-names: Vaish
+      given-names: Puru
+      orcid: "https://orcid.org/0000-0002-5180-5293"
+    - family-names: Wang
+      given-names: Shunxin
+      orcid: "https://orcid.org/0000-0002-6105-5545"
+    - family-names: Strisciuglio
+      given-names: Nicola
+      orcid: "https://orcid.org/0000-0002-7478-3509"
+  title: 'Fourier-basis functions to bridge augmentation gap: Rethinking frequency augmentation in image classification'
+  doi: 10.48550/arXiv.2403.01944
+  type: conference-paper
+  pages: 17763--17772
+  year: '2024'
+  collection-title: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition
+  conference: {CVPR 2024}
+  publisher: {IEEE/CVF}
