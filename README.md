@@ -94,14 +94,12 @@ The Fourier heatmaps of models are plotted using [this repository](https://githu
 ## Citation
 If you find this repository useful, please consider citing our paper:
 ```
-@article{afamar2024,
-	author = {Vaish, Puru and Wang, Shunxin and Strisciuglio, Nicola},
-	title = {{Fourier-basis Functions to Bridge Augmentation Gap: Rethinking Frequency Augmentation in Image Classification}},
-	journal = {arXiv},
-	year = {2024},
-	month = mar,
-	eprint = {2403.01944},
-	doi = {10.48550/arXiv.2403.01944}
+@inproceedings{afa,
+  title={Fourier-basis functions to bridge augmentation gap: Rethinking frequency augmentation in image classification},
+  author={Vaish, Puru and Wang, Shunxin and Strisciuglio, Nicola},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={17763--17772},
+  year={2024}
 }
 ```
 
