@@ -84,8 +84,11 @@ python main.py
 - thop
 
 ## Pretrained Models
-The process to load pretrained models for ImageNet can be found [here](./pretrained) using the ```load_weights.py``` script. Pretrained weights can be downloaded [here](https://drive.google.com/drive/folders/1eUj2ZzqOCe5jzyr872qKpPIWgvU2CM4l?usp=sharing)
-.
+The process to load pretrained models for ImageNet can be found [here](./pretrained) using the ```load_weights.py``` script. Pretrained weights can be downloaded as decribed below:
+
+For ImageNet, all models have been moved to Zenodo and can be downloaded [here](https://zenodo.org/records/13755777).
+For CIFAR-10, all model weights are available [here](https://zenodo.org/records/11059640).
+
 ## Evaluations
 We refer to: [CorruptionBenchCV](https://github.com/nis-research/CorruptionBenchCV) for the corruption benchmark tests on ImageNet-C, ImageNet-\bar{C}, ImageNet-3DCC and ImageNet-P, and the [ImageNet-v2](https://github.com/modestyachts/ImageNetV2) and [ImageNet-R](https://github.com/hendrycks/imagenet-r) for the OOD tests.
 
