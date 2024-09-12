@@ -107,4 +107,4 @@ If you find this repository useful, please consider citing our paper:
 ```
 
 ## License
-This repository is released under the MIT License. See [LICENSE](./LICENSE) for more details.
+This repository is released under the Apache 2.0 license. See [LICENSE](./LICENSE) for more details.
