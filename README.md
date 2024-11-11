@@ -32,7 +32,7 @@ experiments = [
     # It does not use mix like CutMix or MixUp
     # No other augmentations are used
     {
-        'ds': 'in', 'm': 'rn50dubin', 'use_jsd': False,
+        'ds': 'in', 'm': 'rn50_dubin', 'use_jsd': False,
         'use_prime': False, 'use_augmix': False, 'in_mix': False, 'use_mix': False,
         'use_fourier': False, 'use_apr': False, 'attack': 'afa', 'min_str': 0., 'mean_str': 10.,
     },
